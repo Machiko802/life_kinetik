@@ -1,0 +1,42 @@
+/* 新商品出品画面 */
+.items-main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  font-size: 18px;
+}
+
+.items-form {
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh 15vw;
+}
+.items-sell-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.items-name {
+  width: 120px;
+  height: 100px;
+}
+.items-text {
+  /* height: 50vh;
+  width: 120px; */
+  width: 100%;
+  padding: 16px 16px ０;
+  border-radius: 4px;
+  resize: none;
+}
+
+.item-stock {
+  height: 10vh;
+}
+.btn {
+  margin-top: 20px;
+}
