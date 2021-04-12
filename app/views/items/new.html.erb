@@ -1,0 +1,36 @@
+<%# 新商品出品画面 %>
+<div class="items-main">
+
+<div class="items-form">
+<h2 class="items-sell-title">商品を登録してください</h2>
+
+<%= form_with(model: @item, local: true) do |f| %>
+<div class="items-image">
+       <p>商品画像</p>
+<%= f.file_field :image %>  
+</div>
+<div class="new-items">
+  <div class="items-name">
+  <p>商品名</p>
+<%= f.text_area :name, size: "60x2", placeholder:"商品名"%>
+  </div>
+  <div class="items-text">
+  <p>商品詳細</p>
+<%= f.text_area :text, size: "60x15", placeholder:"商品詳細" %>
+  </div>
+  <div class="items-price"> 
+  <p>価格</p>
+<%= f.text_field :price, placeholder:"価格" %><span class="sell-yen">円</span>
+  </div>
+  <div class="items-stock">
+  <p>在庫数</p>
+<%= f.text_field :stock, placeholder:"在庫数" %><span class="sell-stock">個</span>
+  </div>
+</div>
+<div class="btn">
+<%= f.submit "登録する" %>
+<%= link_to "戻る", root_path %>
+</div>
+<% end %>
+</div>
+</div>
